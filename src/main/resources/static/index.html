@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Controle de Projetos</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="topo">
+		<div class="marca">
+			<span class="marca-selo">AC2</span>
+			<div>
+				<p class="marca-kicker">Sistema de controle</p>
+				<h1>Projetos</h1>
+			</div>
+		</div>
+		<p class="topo-texto">Cadastre um projeto e acompanhe a equipe vinculada.</p>
+	</header>
+
+	<main class="pagina">
+		<section class="painel" aria-labelledby="titulo-cadastro">
+			<div class="painel-cabeca">
+				<h2 id="titulo-cadastro">Novo projeto</h2>
+				<p>A descrição e as duas datas são obrigatórias. O fim não pode ser anterior ao início.</p>
+			</div>
+			<form id="form-projeto">
+				<label>
+					Descrição
+					<input id="descricao" name="descricao" type="text" maxlength="200" required placeholder="Ex.: Portal do cliente">
+				</label>
+				<div class="datas">
+					<label>
+						Data de início
+						<input id="dataInicio" name="dataInicio" type="date" required>
+					</label>
+					<label>
+						Data de fim
+						<input id="dataFim" name="dataFim" type="date" required>
+					</label>
+				</div>
+				<button id="botao-salvar" type="submit">Cadastrar projeto</button>
+			</form>
+		</section>
+
+		<section class="painel" aria-labelledby="titulo-lista">
+			<div class="painel-cabeca lista-cabeca">
+				<div>
+					<h2 id="titulo-lista">Projetos cadastrados</h2>
+					<p id="resumo">Carregando...</p>
+				</div>
+				<form id="form-filtro" class="filtro">
+					<label>
+						Início a partir de
+						<input id="filtroInicio" type="date">
+					</label>
+					<label>
+						Início até
+						<input id="filtroFim" type="date">
+					</label>
+					<button type="submit">Filtrar</button>
+					<button id="limpar-filtro" type="button" class="secundario">Limpar</button>
+				</form>
+			</div>
+			<div id="alerta" class="alerta" hidden></div>
+			<div id="lista" class="lista"></div>
+		</section>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>
