@@ -25,7 +25,7 @@ Este projeto foi desenvolvido para a disciplina de AC2 com o objetivo de pratica
 mvn spring-boot:run
 ```
 
-Depois, acesse [http://localhost:8081](http://localhost:8081) no navegador.
+Depois, acesse [http://localhost:8081](http://localhost:8080) no navegador.
 
 ## Tela do sistema
 
