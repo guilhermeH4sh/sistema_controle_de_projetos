@@ -1,6 +1,6 @@
 # Sistema de Controle de Projetos
 
-Este projeto foi desenvolvido para a disciplina de AC2 com o objetivo de praticar a criação de uma aplicação web. O sistema permite cadastrar projetos, informar suas datas de início e fim e acompanhar os funcionários vinculados a cada projeto.
+Este projeto foi desenvolvido para a disciplina de Desenvolvimento Web Back-end com o objetivo de praticar a criação de uma aplicação web. O sistema permite cadastrar projetos, informar suas datas de início e fim e acompanhar os funcionários vinculados a cada projeto.
 
 ## Funcionalidades
 
